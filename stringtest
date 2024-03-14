@@ -1,0 +1,6 @@
+function toKebabCase(str) {
+    return str.replace(/[A-Z]/g, match => `-${match.toLowerCase()}`).replace(/^-/, '');
+}
+
+// Example usage:
+console.log(toKebabCase('helloWorld')); // Output: "hello-world"
